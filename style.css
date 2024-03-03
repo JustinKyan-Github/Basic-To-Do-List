@@ -1,0 +1,102 @@
+html {
+    scroll-padding-top: 3rem;
+}
+
+
+
+
+.gradient-background {/*class selecter*/
+    background: linear-gradient(255deg,#9df0cc,#aee6eb);
+    background-size: 340% 340%;
+    animation: gradient-anim 7s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate both;
+}
+
+.text-item-anim{
+    background: linear-gradient(235deg, #3a1c61 20%, #db6cad 65%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-anim 7s cubic-bezier(0.37, 0, 0.63, 1) infinite alternate-reverse backwards;
+}
+
+.text-item-static{
+    background-color: white; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-thick-onetier{
+    font-weight: 800;
+}
+
+h1{/*tag selector*/
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{/*tag selector*/
+    text-align: center;
+    font-weight: bold;
+}
+
+div{
+    text-align: justify;
+}
+
+divc{
+    text-align: center;
+}
+
+.phob{
+    text-align: center;
+    padding-inline-start: 25%;
+    padding-inline-end: 25%;
+    line-height: 2;
+}
+
+@keyframes gradient-anim {
+    0% {
+        opacity: 1;
+        background-position: 0% 50%;
+    }
+    50% {
+        opacity: 1;
+        background-position: 100% 50%;
+    }
+    100% {
+        opacity: 1;
+        background-position: 0% 50%;
+    }
+  }
+
+body {
+    font-family: Arial, sans-serif;
+}
+.task {
+    margin-bottom: 5px;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+#task-list li {
+    list-style: none;
+    padding: 10px;
+}
+
+.listPad{/*class selector*/
+    display: inline-block;
+    text-align: center;
+    padding-inline-start: 25%;
+    padding-inline-end: 15%;
+    line-height: 1.5;
+}
+
+.color{
+    background-color:#9df0cc
+}
